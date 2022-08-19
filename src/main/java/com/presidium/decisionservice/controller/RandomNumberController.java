@@ -13,4 +13,9 @@ public class RandomNumberController {
         return new Random().nextInt(100);
     }
 
+    @GetMapping("/")
+    public String hello(){
+        return "Hello there";
+    }
+
 }
